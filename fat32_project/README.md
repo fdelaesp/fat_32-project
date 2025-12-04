@@ -87,6 +87,12 @@ Example:
 ./bin/filesys fat32.img
 ```
 
+For our project we have a test image called test.img, so the command would be:
+```bash
+./bin/filesys test.img
+```
+
+
 ## Usage
 
 Once the program is running, you'll see a prompt like:
