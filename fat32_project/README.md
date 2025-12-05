@@ -3,7 +3,7 @@
 **Authors:** Francisco de La Espriella (delaespr), Samuel Marcano, Diego Chang  
 **Course:** COP4610 - Operating Systems  
 **Institution:** Florida State University  
-**Semester:** Fall 2024
+**Semester:** Fall 2025
 
 ## Project Overview
 
