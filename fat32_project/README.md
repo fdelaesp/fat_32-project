@@ -157,12 +157,12 @@ open myfile -r
 # Read contents
 read myfile 13
 
-# Close and return to parent
+# Close the file
 close myfile
-cd ..
 
-# Remove the file
-rm documents/myfile
+# Remove the file and return to parent
+rm myfile
+cd ..
 
 # Remove the directory
 rmdir documents
@@ -206,7 +206,7 @@ The program uses packed structures to accurately represent FAT32 on-disk formats
 ### Assumptions and Limitations
 
 - Maximum 10 files can be open simultaneously
-- Filenames must be 11 characters or less (8.3 format)
+- Filenames must be 11 characters or less
 - No support for deep directory paths (no "/" expansion)
 - Long directory names are skipped
 - File and directory names cannot contain spaces
@@ -299,7 +299,7 @@ The program has been tested with various FAT32 images and can be validated using
   - `lsof` command - Open file listing with formatted output
   - `lseek` command - File position management
   - `read` command - File reading with cluster chain navigation
-  - Open file tracking system (OpenFile structure management)
+  - Open file tracking system 
   
 - **Cluster Allocation** (src/fat32.c) - 4 hours
   - `allocate_cluster` function - Free cluster scanning and allocation
